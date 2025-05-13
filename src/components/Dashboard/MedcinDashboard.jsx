@@ -1,24 +1,23 @@
- HEAD
+// import React from 'react';
+// import Ordonnance from '../../Documents/Ordonnance'; 
+// import ListeRendezvous from '../../Documents/ListeRendezvous';
 
-import React from 'react';
-import Ordonnance from '../../Documents/Ordonnance'; 
+// const MedcinDashboard = ({ activeComponent ,users,handleDeleteUser,fetchAllUsers}) => {
+//   return (
+//     <div className="container-fluid p-0">
+//       <div className="min-vh-100 p-4">
+//         {activeComponent === 'dashboard' && <Ordonnance />}
+//         {activeComponent ==='utilisateur'&& <ListeRendezvous users={users} handleDeleteUser={handleDeleteUser} 
+//         fetchAllUsers={fetchAllUsers}/>}
+//       </div>
+//     </div>
+//   );
+// };
 
-
-const MedcinDashboard = ({ activeComponent ,users,handleDeleteUser,fetchAllUsers}) => {
-  return (
-    
-    <div className="container-fluid p-0">
-      <div className="min-vh-100 p-4">
-        {activeComponent === 'dashboard' && <Ordonnance />}
-       
-      </div>
-    </div>
-  );
-};
-
+// export default MedcinDashboard;
 import React from 'react';
 import ConsulteRendezVous from '../../Documents/ListeRendezvous';
-
+import  Ordonnances from '../../Documents/Ordonnance'; 
 const MedcinDashboard = ({ activeComponent }) => {
  
 return (
@@ -34,11 +33,11 @@ return (
     backgroundAttachment: 'fixed',
   }}
 >
-      {activeComponent ==='rendez_vous' && <ConsulteRendezVous />}    
+      {activeComponent ==='rendez_vous' && <ConsulteRendezVous />}  
+       {activeComponent === 'ordonnance' && <Ordonnances />}  
   </div>
   </div>
 );
 }
 
-d6e5dc975004c6f78915482fe6f26f0b7b1af0d6
 export default MedcinDashboard;
