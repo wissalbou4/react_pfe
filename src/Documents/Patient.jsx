@@ -224,6 +224,7 @@ const Patient = () => {
                 <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
                 <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Téléphone</th>
                 <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date de naissance</th>
+                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Adresse</th>
                 <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
               </tr>
             </thead>
@@ -236,6 +237,8 @@ const Patient = () => {
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{patient.email || '-'}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{patient.telephone || '-'}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{patient.date_naissance || '-'}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{patient.adresse || '-'}</td>
+
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-2">
                         <button
