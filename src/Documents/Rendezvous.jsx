@@ -241,9 +241,7 @@ const RendezVous = () => {
                   <tr key={rdv.id} className="hover:bg-gray-50">
                     <td className="px-4 py-3">
                       <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center">
-                          {patient?.prenom?.[0]?.toUpperCase()}{patient?.nom?.[0]?.toUpperCase()}
-                        </div>
+                    
                         <div>
                           <div className="font-medium">{patient?.prenom} {patient?.nom}</div>
                           <div className="text-sm text-gray-500">{patient?.email}</div>
