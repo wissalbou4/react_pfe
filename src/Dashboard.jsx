@@ -144,7 +144,7 @@ const Dashboard = () => {
        
       ],
       medcin: [
-        { id: 'rendez_vous', icon: <FaCalendarCheck />, label: ' Liste Rendez-vous' },
+        { id: 'rendez_vous', icon: <FaCalendarCheck />, label: 'Liste Rendez-vous' },
         { id: 'ordonnance', icon: <FaFileMedical />, label: 'Ordonnances' }
       ],
       

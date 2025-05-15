@@ -1,10 +1,14 @@
-import React , { useEffect } from 'react';
-import ConsulteRendezVous from '../../Documents/ListeRendezvous';
 
+
+import React , {useEffect}from 'react';
+import ConsulteRendezVous from '../../Documents/ListeRendezvous';
+import  Ordonnances from '../../Documents/Ordonnance'; 
 const MedcinDashboard = ({ activeComponent,setActiveComponent  }) => {
   useEffect(() => {
     setActiveComponent('rendez_vous');
   }, [setActiveComponent]);
+ 
+
 return (
   <div>
     
@@ -18,7 +22,8 @@ return (
     backgroundAttachment: 'fixed',
   }}
 >
-      {activeComponent ==='rendez_vous' && <ConsulteRendezVous />}    
+      {activeComponent ==='rendez_vous' && <ConsulteRendezVous />}  
+       {activeComponent === 'ordonnance' && <Ordonnances />}  
   </div>
   </div>
 );
