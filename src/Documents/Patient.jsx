@@ -18,7 +18,8 @@ const Patient = () => {
     email: '',
     telephone: '',
     date_naissance: '',
-    adresse: ''
+    adresse: '',
+    antecedents_medicaux: '',
   });
 
   const initialFormState = {
@@ -27,7 +28,8 @@ const Patient = () => {
     email: '',
     telephone: '',
     date_naissance: '',
-    adresse: ''
+    adresse: '',
+    antecedents_medicaux: '',
   };
 
   useEffect(() => {
@@ -123,7 +125,8 @@ const Patient = () => {
       email: patient.email || '',
       telephone: patient.telephone || '',
       date_naissance: patient.date_naissance || '',
-      adresse: patient.adresse || ''
+      adresse: patient.adresse || '',
+      antecedents_medicaux: patient.antecedents_medicaux || '',
     });
     setShowModal(true);
   };
@@ -225,6 +228,7 @@ const Patient = () => {
                 <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Téléphone</th>
                 <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date de naissance</th>
                 <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Adresse</th>
+                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Antécédants</th>
                 <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
               </tr>
             </thead>
@@ -238,6 +242,8 @@ const Patient = () => {
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{patient.telephone || '-'}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{patient.date_naissance || '-'}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{patient.adresse || '-'}</td>
+                    <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{patient.antecedents_medicaux || '-'}</td>
+
 
                     <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                       <div className="flex space-x-2">
@@ -377,6 +383,20 @@ const Patient = () => {
                       onChange={handleChange}
                       disabled={loading}
                       rows="2"
+                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="ville" className="block text-sm font-medium text-gray-700 mb-1">
+                    antecedents_medicaux
+                    </label>
+                    <input
+                      id="antecedents_medicaux"
+                      name="antecedents_medicaux"
+                      type="antecedents_medicaux"
+                      value={formData.antecedents_medicaux}
+                      onChange={handleChange}
+                      disabled={loading}
                       className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100"
                     />
                   </div>

@@ -194,7 +194,7 @@ const ConsulteRendezVous = () => {
                                     <div>
                                         <label className="text-sm font-medium text-gray-600">Antécédents médicaux:</label>
                                         <p className="mt-1 text-gray-900 bg-gray-50 p-3 rounded-lg">
-                                            {currentRdv.patient?.antecedents || 'Non renseigné'}
+                                            {currentRdv.patient?.antecedents_medicaux || 'Non renseigné'}
                                         </p>
                                     </div>
                                     

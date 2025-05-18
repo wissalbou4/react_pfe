@@ -77,15 +77,7 @@ function Login() {
               </div>
             </div>
             
-            <div className="d-flex justify-content-between mb-4">
-              <div className="form-check">
-                <input className="form-check-input" type="checkbox" id="remember" />
-                <label className="form-check-label small" htmlFor="remember">
-                  Remember me
-                </label>
-              </div>
-              <a href="#" className="text-decoration-none small" style={{ color: '#4e4376' }}>Forgot password?</a>
-            </div>
+            
             
             <button 
               type="submit" 
@@ -105,9 +97,7 @@ function Login() {
           
           {message && <div className="mt-3 alert alert-danger">{message}</div>}
           
-          <div className="mt-4 text-center">
-            <p className="mb-0 small">Don't have an account? <a href="#" style={{ color: '#2b5876' }} className="text-decoration-none fw-bold">Sign up</a></p>
-          </div>
+          
         </div>
       </div>
     </div>
